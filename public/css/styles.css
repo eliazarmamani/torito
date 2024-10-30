@@ -1,0 +1,117 @@
+/* Reset básico para márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto oscuro */
+    line-height: 1.6; /* Espaciado de línea mejorado */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #007BFF; /* Color azul */
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 24px;
+    border-bottom: 2px solid #007BFF; /* Línea debajo del título */
+    padding-bottom: 10px;
+}
+
+button, .button {
+    background-color: #007BFF; /* Color azul */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    font-size: 16px;
+    display: inline-block; /* Hacer que los botones sean en línea */
+    text-decoration: none; /* Eliminar subrayado en enlaces */
+}
+
+button:hover, .button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.error {
+    color: #721c24; /* Rojo oscuro */
+    background-color: #f8d7da; /* Fondo rojo claro */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb; /* Borde para el error */
+}
+
+.success {
+    color: #155724; /* Verde oscuro */
+    background-color: #d4edda; /* Fondo verde claro */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #c3e6cb; /* Borde para el éxito */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* Bordes de las celdas */
+}
+
+th {
+    background-color: #007BFF; /* Fondo de encabezados */
+    color: white; /* Color del texto del encabezado */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px; /* Espaciado para las etiquetas */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espaciado entre campos */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #007BFF; /* Borde azul al enfocar */
+    outline: none; /* Eliminar el contorno */
+}
